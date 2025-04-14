@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adriano_Evangelista</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Basic information</legend>
+        <form action="sample.php" method="post">
+            <p>
+                <label>1. Name
+                    <input type="text" name="name" placeholder="Last Name, First Name, MI" required>
+                </label>
+            </p>
+            <p>
+                <label>2. Email
+                    <input type="email" name="emailadd" placeholder="example@example.com">                </label>
+            </p>
+            <p>
+                <label>3. Phone
+            
+                    <input type="tel" name="pnumber" placeholder="+639999999999">
+                
+                </label>
+            </p>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Home Address</legend>
+        <form action="sample.php" method="post">
+            <p>
+                <label>1. Address
+                    <textarea name="comments" maxlength="500"></textarea>
+                </label>                    
+            </p>
+            <p>
+                <label>2. Post Code
+                    <input type="text" name="postcode">
+                </label>
+            </p>
+            <p>
+                <label>3. Country
+                    <input type="text" name="country">
+                </label>
+            </p>
+            
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Type of Payment</legend>
+        <ol>
+            <li> <fieldset>
+                    <legend>Payment</legend>
+                    <p>
+                        <label><input type="radio" name="payment_method" value="credit"> 1. Credit</label>
+                    </p>
+                    <p>
+                        <label><input type="radio" name="payment_method" value="cash"> 2. Cash</label>
+                    </p>
+                    <p>
+                        <label><input type="radio" name="payment_method" value="gcash"> 3. Gcash</label>
+                    </p>
+                </fieldset>
+            </li>
+            <li> Account Number: <input type="text" name="account_number"></li>
+            <li> Account Name: <input type="text" name="account_name"  placeholder="Exact Details"></li>
+            <li> Amount: <input type="text" name="amount" placeholder="Exact Amount"></li>
+        </ol>
+    </fieldset>
+    <fieldset>
+        
+        <form action="sample.php" method="post">
+            <p>
+                <input type="submit" value="Submit">
+            </p>
+        </form>
+    </fieldset>
+</body>
+</html>

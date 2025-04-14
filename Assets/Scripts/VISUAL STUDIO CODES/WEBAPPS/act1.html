@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>act1</title>
+</head>
+<body>
+<header>
+<form action="sample.php" method="post">
+<p>
+<label>Name
+<input type="text" name="name" required>
+</label>
+</p>
+<p>
+<label>Phone <input type="tel" name="pnumber" required>
+</label>
+</p>
+<p>
+<label>Email <input type="email" name="emailadd" required>
+</label>
+</p>
+<fieldset>
+<legend>Which transportation do you require?</legend>
+<p>
+<label><input type="radio" name="trans" required value="car"> Car
+</label>
+</p>
+<p>
+<label><input type="radio" name="trans" required value="van"> Van
+</label>
+</p>
+<p>
+<label><input type="radio" name="trans" required value="limo"> Limo
+</label>
+</p>
+</fieldset>
+<fieldset>
+<legend>Extras</legend>
+<p>
+<label><input type="checkbox" name="extra" value="baby"> Baby Seat
+</label>
+</p>
+<p>
+<label><input type="checkbox" name="extra" value="PWD"> Wheelchair Access
+</label>
+</p>
+</fieldset>
+<p>
+<label>Pickup Date/Time <input type="datetime-local" name="pickup_time" required>
+</label>
+</p>
+<p>
+<label>Pickup placeholder
+<select id="pickup_place" name="pickup_place">
+<option value="" selected="selected">Select One</option>
+<option value="office">Offices</option>
+<option value="Hotellobby">Hotel Lobby</option>
+<option value="House">House</option>
+</select>
+</label>
+</p>
+<p>
+<label>Dropoff Place</label>
+<select name="destination" id="destination">
+<option value="" selected="selected">Select One</option>
+<option value="Airport">Airport</option>
+<option value="Beach">Beach</option>
+<option value="Mall">Mall</option>
+</select>
+</p>
+<p>
+<label>Additional Information <textarea name="comments" maxlength="500"></textarea>
+</label>
+</p>
+<p>
+<button type="submit">Submit</button>
+</p>
+</form>
+</header>
+</body>
+</html>
