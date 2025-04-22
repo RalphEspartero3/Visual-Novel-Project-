@@ -2419,6 +2419,7 @@ GameObject:
   - component: {fileID: 161779861}
   - component: {fileID: 161779863}
   - component: {fileID: 161779862}
+  - component: {fileID: 161779864}
   m_Layer: 5
   m_Name: Chip
   m_TagString: Untagged
@@ -2483,6 +2484,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 161779860}
   m_CullTransparentMesh: 1
+--- !u!95 &161779864
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161779860}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 235eeeebbf15cd2419f6989562cd3587, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &163653829
 GameObject:
   m_ObjectHideFlags: 0
@@ -4589,6 +4611,7 @@ GameObject:
   - component: {fileID: 324453785}
   - component: {fileID: 324453784}
   - component: {fileID: 324453783}
+  - component: {fileID: 324453786}
   m_Layer: 5
   m_Name: ButtonContinue
   m_TagString: Untagged
@@ -4658,7 +4681,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 324453784}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 324453786}
+        m_TargetAssemblyTypeName: SceneNavigation, Assembly-CSharp
+        m_MethodName: btnNextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &324453784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4697,6 +4732,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 324453781}
   m_CullTransparentMesh: 1
+--- !u!114 &324453786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324453781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec2e9df132f85394f8b660650dfc7c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeScene: {fileID: 2125447409}
+  nextScene: {fileID: 811012011}
 --- !u!1 &327449033
 GameObject:
   m_ObjectHideFlags: 0
@@ -5259,6 +5308,7 @@ GameObject:
   - component: {fileID: 381250029}
   - component: {fileID: 381250031}
   - component: {fileID: 381250030}
+  - component: {fileID: 381250032}
   m_Layer: 5
   m_Name: Chip
   m_TagString: Untagged
@@ -5323,6 +5373,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 381250028}
   m_CullTransparentMesh: 1
+--- !u!95 &381250032
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381250028}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 80bed994713cc234b8e47807c5b1fcbd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &382840832
 GameObject:
   m_ObjectHideFlags: 0
@@ -7675,6 +7746,7 @@ GameObject:
   - component: {fileID: 536624622}
   - component: {fileID: 536624624}
   - component: {fileID: 536624623}
+  - component: {fileID: 536624625}
   m_Layer: 5
   m_Name: Chip
   m_TagString: Untagged
@@ -7739,6 +7811,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536624621}
   m_CullTransparentMesh: 1
+--- !u!95 &536624625
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536624621}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fa777d617816c3d47ad9ea6974a9edd5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &539145266
 GameObject:
   m_ObjectHideFlags: 0
@@ -8996,7 +9089,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &608680664
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9014,6 +9107,7 @@ RectTransform:
   - {fileID: 1814446091}
   - {fileID: 349178352}
   - {fileID: 300889729}
+  - {fileID: 1856002930}
   m_Father: {fileID: 1000420981}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -9655,6 +9749,7 @@ GameObject:
   - component: {fileID: 655301537}
   - component: {fileID: 655301536}
   - component: {fileID: 655301535}
+  - component: {fileID: 655301538}
   m_Layer: 5
   m_Name: ButtonContinue (2)
   m_TagString: Untagged
@@ -9724,7 +9819,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 655301536}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 655301538}
+        m_TargetAssemblyTypeName: SceneNavigation, Assembly-CSharp
+        m_MethodName: btnNextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &655301536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9763,6 +9870,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655301533}
   m_CullTransparentMesh: 1
+--- !u!114 &655301538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655301533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec2e9df132f85394f8b660650dfc7c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeScene: {fileID: 1681741407}
+  nextScene: {fileID: 166189352}
 --- !u!1 &659930735
 GameObject:
   m_ObjectHideFlags: 0
@@ -10400,6 +10521,7 @@ GameObject:
   - component: {fileID: 712300012}
   - component: {fileID: 712300011}
   - component: {fileID: 712300010}
+  - component: {fileID: 712300013}
   m_Layer: 5
   m_Name: ButtonDontProceed
   m_TagString: Untagged
@@ -10469,7 +10591,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 712300011}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 712300013}
+        m_TargetAssemblyTypeName: SceneNavigation, Assembly-CSharp
+        m_MethodName: btnNextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &712300011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10508,6 +10642,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 712300008}
   m_CullTransparentMesh: 1
+--- !u!114 &712300013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712300008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec2e9df132f85394f8b660650dfc7c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeScene: {fileID: 55221277}
+  nextScene: {fileID: 1681741407}
 --- !u!1 &715856154
 GameObject:
   m_ObjectHideFlags: 0
@@ -12031,6 +12179,7 @@ GameObject:
   - component: {fileID: 842793228}
   - component: {fileID: 842793227}
   - component: {fileID: 842793226}
+  - component: {fileID: 842793229}
   m_Layer: 5
   m_Name: ButtonContinue
   m_TagString: Untagged
@@ -12100,7 +12249,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 842793227}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 842793229}
+        m_TargetAssemblyTypeName: SceneNavigation, Assembly-CSharp
+        m_MethodName: btnNextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &842793227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12139,6 +12300,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842793224}
   m_CullTransparentMesh: 1
+--- !u!114 &842793229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842793224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec2e9df132f85394f8b660650dfc7c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeScene: {fileID: 2094321658}
+  nextScene: {fileID: 993807346}
 --- !u!1 &844958091
 GameObject:
   m_ObjectHideFlags: 0
@@ -12308,6 +12483,7 @@ GameObject:
   - component: {fileID: 845723013}
   - component: {fileID: 845723015}
   - component: {fileID: 845723014}
+  - component: {fileID: 845723016}
   m_Layer: 5
   m_Name: Tatter
   m_TagString: Untagged
@@ -12372,6 +12548,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845723012}
   m_CullTransparentMesh: 1
+--- !u!95 &845723016
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845723012}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b77ad59b61087d447b3163553c048608, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &846509361
 GameObject:
   m_ObjectHideFlags: 0
@@ -12706,6 +12903,7 @@ GameObject:
   - component: {fileID: 864720629}
   - component: {fileID: 864720628}
   - component: {fileID: 864720627}
+  - component: {fileID: 864720630}
   m_Layer: 5
   m_Name: Button (Legacy)
   m_TagString: Untagged
@@ -12775,7 +12973,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 864720628}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 864720630}
+        m_TargetAssemblyTypeName: SceneNavigation, Assembly-CSharp
+        m_MethodName: btnNextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &864720628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12814,6 +13024,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 864720625}
   m_CullTransparentMesh: 1
+--- !u!114 &864720630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864720625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec2e9df132f85394f8b660650dfc7c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeScene: {fileID: 194483818}
+  nextScene: {fileID: 2125447409}
 --- !u!1 &865088800
 GameObject:
   m_ObjectHideFlags: 0
@@ -14481,6 +14705,7 @@ GameObject:
   - component: {fileID: 977179649}
   - component: {fileID: 977179648}
   - component: {fileID: 977179647}
+  - component: {fileID: 977179650}
   m_Layer: 5
   m_Name: ButtonContinue
   m_TagString: Untagged
@@ -14550,7 +14775,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 977179648}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 977179650}
+        m_TargetAssemblyTypeName: SceneNavigation, Assembly-CSharp
+        m_MethodName: btnNextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &977179648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14589,6 +14826,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977179645}
   m_CullTransparentMesh: 1
+--- !u!114 &977179650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977179645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec2e9df132f85394f8b660650dfc7c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeScene: {fileID: 1726473165}
+  nextScene: {fileID: 2094321658}
 --- !u!1 &979278747
 GameObject:
   m_ObjectHideFlags: 0
@@ -15233,6 +15484,7 @@ GameObject:
   - component: {fileID: 1025267306}
   - component: {fileID: 1025267308}
   - component: {fileID: 1025267307}
+  - component: {fileID: 1025267309}
   m_Layer: 5
   m_Name: Pit
   m_TagString: Untagged
@@ -15297,6 +15549,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1025267305}
   m_CullTransparentMesh: 1
+--- !u!95 &1025267309
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025267305}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0bd071b16bb9d804980aced10c6d9968, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1029791051
 GameObject:
   m_ObjectHideFlags: 0
@@ -18003,6 +18276,7 @@ GameObject:
   - component: {fileID: 1233774286}
   - component: {fileID: 1233774285}
   - component: {fileID: 1233774284}
+  - component: {fileID: 1233774287}
   m_Layer: 5
   m_Name: ButtonContinue
   m_TagString: Untagged
@@ -18072,7 +18346,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1233774285}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1233774287}
+        m_TargetAssemblyTypeName: SceneNavigation, Assembly-CSharp
+        m_MethodName: btnNextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1233774285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18111,6 +18397,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233774282}
   m_CullTransparentMesh: 1
+--- !u!114 &1233774287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233774282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec2e9df132f85394f8b660650dfc7c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeScene: {fileID: 811012011}
+  nextScene: {fileID: 2095097699}
 --- !u!1 &1240571428
 GameObject:
   m_ObjectHideFlags: 0
@@ -18197,6 +18497,7 @@ GameObject:
   - component: {fileID: 1244526414}
   - component: {fileID: 1244526416}
   - component: {fileID: 1244526415}
+  - component: {fileID: 1244526417}
   m_Layer: 5
   m_Name: Chip
   m_TagString: Untagged
@@ -18261,6 +18562,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244526413}
   m_CullTransparentMesh: 1
+--- !u!95 &1244526417
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244526413}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 16eda217f1f731b4fb832cf5983df777, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1251506912
 GameObject:
   m_ObjectHideFlags: 0
@@ -20502,6 +20824,7 @@ GameObject:
   - component: {fileID: 1487394060}
   - component: {fileID: 1487394059}
   - component: {fileID: 1487394058}
+  - component: {fileID: 1487394061}
   m_Layer: 5
   m_Name: ButtonContinue
   m_TagString: Untagged
@@ -20571,7 +20894,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1487394059}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487394061}
+        m_TargetAssemblyTypeName: SceneNavigation, Assembly-CSharp
+        m_MethodName: btnNextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1487394059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20610,6 +20945,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487394056}
   m_CullTransparentMesh: 1
+--- !u!114 &1487394061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487394056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec2e9df132f85394f8b660650dfc7c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeScene: {fileID: 993807346}
+  nextScene: {fileID: 824285155}
 --- !u!1 &1492499421
 GameObject:
   m_ObjectHideFlags: 0
@@ -21553,6 +21902,7 @@ GameObject:
   - component: {fileID: 1562751413}
   - component: {fileID: 1562751412}
   - component: {fileID: 1562751411}
+  - component: {fileID: 1562751414}
   m_Layer: 5
   m_Name: ButtonContinue
   m_TagString: Untagged
@@ -21622,7 +21972,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1562751412}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1562751414}
+        m_TargetAssemblyTypeName: SceneNavigation, Assembly-CSharp
+        m_MethodName: btnNextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1562751412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21661,6 +22023,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562751409}
   m_CullTransparentMesh: 1
+--- !u!114 &1562751414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562751409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec2e9df132f85394f8b660650dfc7c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeScene: {fileID: 1099357294}
+  nextScene: {fileID: 1726473165}
 --- !u!1 &1574872993
 GameObject:
   m_ObjectHideFlags: 0
@@ -22738,6 +23114,7 @@ GameObject:
   - component: {fileID: 1648194432}
   - component: {fileID: 1648194434}
   - component: {fileID: 1648194433}
+  - component: {fileID: 1648194435}
   m_Layer: 5
   m_Name: Tatter
   m_TagString: Untagged
@@ -22802,6 +23179,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648194431}
   m_CullTransparentMesh: 1
+--- !u!95 &1648194435
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648194431}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fac58cc44ffa5a54f83683728345bc79, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1652700945
 GameObject:
   m_ObjectHideFlags: 0
@@ -24092,6 +24490,7 @@ GameObject:
   - component: {fileID: 1774380516}
   - component: {fileID: 1774380515}
   - component: {fileID: 1774380514}
+  - component: {fileID: 1774380517}
   m_Layer: 5
   m_Name: ButtonContinue
   m_TagString: Untagged
@@ -24161,7 +24560,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1774380515}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1774380517}
+        m_TargetAssemblyTypeName: SceneNavigation, Assembly-CSharp
+        m_MethodName: btnNextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1774380515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24200,6 +24611,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1774380512}
   m_CullTransparentMesh: 1
+--- !u!114 &1774380517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774380512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec2e9df132f85394f8b660650dfc7c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeScene: {fileID: 300763273}
+  nextScene: {fileID: 1099357294}
 --- !u!1 &1798111300
 GameObject:
   m_ObjectHideFlags: 0
@@ -25401,6 +25826,7 @@ GameObject:
   - component: {fileID: 1840290805}
   - component: {fileID: 1840290807}
   - component: {fileID: 1840290806}
+  - component: {fileID: 1840290808}
   m_Layer: 5
   m_Name: Tatter
   m_TagString: Untagged
@@ -25465,6 +25891,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840290804}
   m_CullTransparentMesh: 1
+--- !u!95 &1840290808
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840290804}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ed3fe5eb60aaaa8468a846b9292d1d63, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1841833073
 GameObject:
   m_ObjectHideFlags: 0
@@ -25618,6 +26065,151 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853281955}
+  m_CullTransparentMesh: 1
+--- !u!1 &1856002929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1856002930}
+  - component: {fileID: 1856002934}
+  - component: {fileID: 1856002933}
+  - component: {fileID: 1856002932}
+  - component: {fileID: 1856002931}
+  m_Layer: 5
+  m_Name: ButtonExit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1856002930
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856002929}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 608680664}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 753, y: -438}
+  m_SizeDelta: {x: 317.6469, y: 131}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1856002931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856002929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e9edf7b4e0c7e54799754419dd2ec73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1856002932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856002929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1856002933}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1856002931}
+        m_TargetAssemblyTypeName: GameExit, Assembly-CSharp
+        m_MethodName: ExitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1856002933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856002929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 583521187, guid: 2923a2c6c80d700408fa15091f8e96b4, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1856002934
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856002929}
   m_CullTransparentMesh: 1
 --- !u!1 &1871643216
 GameObject:
@@ -28470,6 +29062,7 @@ GameObject:
   - component: {fileID: 2050988105}
   - component: {fileID: 2050988104}
   - component: {fileID: 2050988103}
+  - component: {fileID: 2050988106}
   m_Layer: 5
   m_Name: ButtonContinue
   m_TagString: Untagged
@@ -28539,7 +29132,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2050988104}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2050988106}
+        m_TargetAssemblyTypeName: SceneNavigation, Assembly-CSharp
+        m_MethodName: btnNextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2050988104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28578,6 +29183,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050988101}
   m_CullTransparentMesh: 1
+--- !u!114 &2050988106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050988101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec2e9df132f85394f8b660650dfc7c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeScene: {fileID: 2095097699}
+  nextScene: {fileID: 608680663}
 --- !u!1 &2052615729
 GameObject:
   m_ObjectHideFlags: 0
@@ -29396,6 +30015,7 @@ GameObject:
   - component: {fileID: 2081651893}
   - component: {fileID: 2081651892}
   - component: {fileID: 2081651891}
+  - component: {fileID: 2081651894}
   m_Layer: 5
   m_Name: ButtonContinue
   m_TagString: Untagged
@@ -29465,7 +30085,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2081651892}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2081651894}
+        m_TargetAssemblyTypeName: SceneNavigation, Assembly-CSharp
+        m_MethodName: btnNextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2081651892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29504,6 +30136,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081651889}
   m_CullTransparentMesh: 1
+--- !u!114 &2081651894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081651889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec2e9df132f85394f8b660650dfc7c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeScene: {fileID: 166189352}
+  nextScene: {fileID: 300763273}
 --- !u!1 &2082784777
 GameObject:
   m_ObjectHideFlags: 0
@@ -29516,6 +30162,7 @@ GameObject:
   - component: {fileID: 2082784781}
   - component: {fileID: 2082784780}
   - component: {fileID: 2082784779}
+  - component: {fileID: 2082784782}
   m_Layer: 5
   m_Name: ButtonContinue
   m_TagString: Untagged
@@ -29585,7 +30232,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2082784780}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2082784782}
+        m_TargetAssemblyTypeName: SceneNavigation, Assembly-CSharp
+        m_MethodName: btnNextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2082784780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29624,6 +30283,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082784777}
   m_CullTransparentMesh: 1
+--- !u!114 &2082784782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082784777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec2e9df132f85394f8b660650dfc7c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeScene: {fileID: 824285155}
+  nextScene: {fileID: 194483818}
 --- !u!1 &2094321658
 GameObject:
   m_ObjectHideFlags: 0
